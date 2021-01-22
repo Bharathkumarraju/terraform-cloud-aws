@@ -36,7 +36,8 @@ resource "aws_security_group" "awsfw" {
 
 resource "aws_key_pair" "ssh" {
   key_name = "awspublickey"
-  public_key = file("~/testec2.pub") ##please use your public key 
+#  public_key = file("~/testec2.pub") ##please use your public key
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDq8ys8EjAAPgl7lSV0DUI2WsHkeoUcVsEu4y8lOd4uUdVY1P/17KHUzPNXmuhRF+mu3prqwtkT6dRGBxwCdFX1oQtgj3c5iyJOAjzbF3fXLWwEhIXR1zh9uVIGB0ci9iwVIPrLA+sDbLJOMyKBkKdmiJKlZiLkgl7DVhw01n656/bpMwrc8Uw6UEgBxKTA0UV96UYr6V8uQ9h4WhpbCHvA5p+866Mqf714Kd3l1NPd2JA0HG5Rgn+i/9NORB7vtZcB/VHOmLyS61S7hciEs7hcnS+773UVqRCXuCjeN0NjN/oZQe2o3ZLCfqtJT4euhPvlf9A8jik/5fQbHxJGE3LOx5AYTxnuPb8i6KnI+nWYTrBGzTYjDcNL/tfybSPHhKSHGwy1/ABg1hC2uc0vzJfHC7ySNwyp/CGWcmwtcuQqz/D4NW00kE/+Qucy/PHGQV5xdM+9b4hDfiOdcRQmlg2QcILbvbWxhyXBC45Emxjm4mdFMtw3/uf+UQYS8ZUWS68= bharathkumarraju@R77-NB193"
   tags = {
     env = "prod"
   }
